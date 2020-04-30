@@ -130,7 +130,7 @@ func (l License) ValidateLicenseHeader() policy.Check {
 						continue
 					}
 
-					check.errors = append(check.errors, errors.Errorf("File %s does not contain a license header", info.Name()))
+					check.errors = append(check.errors, errors.Errorf("File %s does not contain a license header", path))
 				}
 			}
 		}
